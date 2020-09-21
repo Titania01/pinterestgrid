@@ -7,11 +7,12 @@
 
 html, body {
   background-color: #ffeeee;
+  background-repeat: no-repeat;
 }
 
-img {
-  height: 10rem;
-  width: 10rem;
+.big {
+  width: 20rem;
+  height: 20rem;
 }
 
 .container > div {
@@ -23,15 +24,15 @@ img {
 }
 
 .container > div > img {
-  width: 100%;
-  height: 100%;
+  width: 10rem;
+  height: 10rem;
   object-fit: cover;
 }
 
 .container {
-  margin: 5em auto;
+  height: 40vh;
   display: grid;
   grid-gap: 5px;
-  grid-template-columns: repeat(auto-fit, minmax(100px 1fr));
-  grid-auto-rows: 75px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 200px auto 200px;
 }
